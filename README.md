@@ -25,6 +25,7 @@
 9. **Конец**
 
 ### Блок-схема
+![Блок-схема алгоритма](https://drive.google.com/file/d/1JcA8Oo5aVUWxHu2Z8wsoXsTffqGxvaDJ/view?usp=sharing)
 
 ## 2. Реализация программы
 

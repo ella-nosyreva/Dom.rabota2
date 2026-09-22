@@ -25,7 +25,8 @@
 9. **Конец**
 
 ### Блок-схема
-![Блок-схема алгоритма](https://drive.google.com/file/d/1JcA8Oo5aVUWxHu2Z8wsoXsTffqGxvaDJ/view?usp=sharing)
+![Блок-схема алгоритма](<img width="220" height="852" alt="блок-схема drawio" src="https://github.com/user-attachments/assets/913a3726-6988-437c-81a8-f9352ec8cd34" />
+)
 
 ## 2. Реализация программы
 

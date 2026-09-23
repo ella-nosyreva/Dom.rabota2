@@ -25,8 +25,7 @@
 9. **Конец**
 
 ### Блок-схема
-![Блок-схема алгоритма](<img width="220" height="852" alt="блок-схема drawio" src="https://github.com/user-attachments/assets/913a3726-6988-437c-81a8-f9352ec8cd34" />
-)
+<img width="220" height="852" alt="блок-схема drawio" src="https://github.com/user-attachments/assets/42e5bb6c-c072-40e1-8959-7f1b81a43fe0" />
 
 ## 2. Реализация программы
 

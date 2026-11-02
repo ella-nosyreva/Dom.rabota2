@@ -1,5 +1,4 @@
 #define _CRT_SECURE_NO_WARNINGS
-
 #include <stdio.h>
 #include <locale.h>
 
@@ -12,30 +11,30 @@ int main() {
     float price_per_sqm;
     float length_m;
 
-    printf("Введите цену ткани за квадратный метр (B руб): ");
+    printf("Г‚ГўДєГ¤ДЌЕ€Дє Г¶ДєГ­Гі Е€Д™Е•Г­ДЌ Г§Е• Д™ГўЕ•Г¤Д‘Е•Е€Г­Е±Г© Д›ДєЕ€Д‘ (B Д‘ГіГЎ): ");
     scanf("%f", &price_per_sqm);
 
-    printf("Введите длину куска ткани (x метров): ");
+    printf("Г‚ГўДєГ¤ДЌЕ€Дє Г¤Г«ДЌГ­Гі Д™ГіЕ„Д™Е• Е€Д™Е•Г­ДЌ (x Д›ДєЕ€Д‘Г®Гў): ");
     scanf("%f", &length_m);
 
-    float width_m = WIDTH_CM / CM_TO_METERS; // Вычисляем ширину в метрах (80 см = 0.8 м)
-    double area = length_m * width_m; // Вычисляем площадь куска ткани в кв. метрах
-    double total_cost = area * price_per_sqm; // Вычисляем итоговую стоимость
+    float width_m = WIDTH_CM / CM_TO_METERS;
+    double area = length_m * width_m;
+    double total_cost = area * price_per_sqm;
 
-    printf("\nРАСЧЕТ СТОИМОСТИ ТКАНИ\n");
+    printf("\nДђЕ”ЕѓГ—Д№Е‡ ЕѓЕ‡ГЋДЊДљГЋЕѓЕ‡ДЊ Е‡ДЕ”ГЌДЊ\n");
     printf("========================================\n\n");
-    printf("УСЛОВИЯ:\n");
-    printf("-- Цена за кв. метр: %.2f руб.\n", price_per_sqm);
-    printf("-- Длина куска: %.2f м\n", length_m);
-    printf("-- Ширина куска: %.0f см (%.2f м)\n\n", WIDTH_CM, width_m);
+    printf("Г“ЕѓГ‹ГЋГ‚ДЊГџ:\n");
+    printf("-- Г–ДєГ­Е• Г§Е• Д™Гў. Д›ДєЕ€Д‘: %.2f Д‘ГіГЎ.\n", price_per_sqm);
+    printf("-- Г„Г«ДЌГ­Е• Д™ГіЕ„Д™Е•: %.2f Д›\n", length_m);
+    printf("-- ЕДЌД‘ДЌГ­Е• Д™ГіЕ„Д™Е•: %.0f Е„Д› (%.2f Д›)\n\n", WIDTH_CM, width_m);
 
-    printf("РАСЧЕТ:\n");
-    printf("-- Площадь куска ткани: %.2f м * %.2f м = %.2f кв. м\n",
+    printf("ДђЕ”ЕѓГ—Д№Е‡:\n");
+    printf("-- ДЋГ«Г®ЕЇЕ•Г¤Гј Д™ГіЕ„Д™Е• Е€Д™Е•Г­ДЌ: %.2f Д› * %.2f Д› = %.2f Д™Гў. Д›\n",
         length_m, width_m, area);
-    printf("-- Стоимость куска: %.2f кв. м * %.2f руб/кв.м = %.2f руб.\n",
+    printf("-- ЕѓЕ€Г®ДЌД›Г®Е„Е€Гј Д™ГіЕ„Д™Е•: %.2f Д™Гў. Д› * %.2f Д‘ГіГЎ/Д™Гў.Д› = %.2f Д‘ГіГЎ.\n",
         area, price_per_sqm, total_cost);
     printf("========================================\n");
-    printf("ИТОГОВАЯ СТОИМОСТЬ: %.2f руб.\n", total_cost);
+    printf("ДЊЕ‡ГЋД‚ГЋГ‚Е”Гџ ЕѓЕ‡ГЋДЊДљГЋЕѓЕ‡Гњ: %.2f Д‘ГіГЎ.\n", total_cost);
 
     return 0;
 }

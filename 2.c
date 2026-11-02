@@ -1,3 +1,4 @@
+
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <locale.h>
@@ -11,30 +12,30 @@ int main() {
     float price_per_sqm;
     float length_m;
 
-    printf("Ââĺäčňĺ öĺíó ňęŕíč çŕ ęâŕäđŕňíűé ěĺňđ (B đóá): ");
+    printf("Введите цену ткани за квадратный метр (B руб): ");
     scanf("%f", &price_per_sqm);
 
-    printf("Ââĺäčňĺ äëčíó ęóńęŕ ňęŕíč (x ěĺňđîâ): ");
+    printf("Введите длину куска ткани (x метров): ");
     scanf("%f", &length_m);
 
-    float width_m = WIDTH_CM / CM_TO_METERS;
+    float width_m = WIDTH_CM / CM_TO_METERS; /
     double area = length_m * width_m;
     double total_cost = area * price_per_sqm;
 
-    printf("\nĐŔŃ×ĹŇ ŃŇÎČĚÎŃŇČ ŇĘŔÍČ\n");
+    printf("\nРАСЧЕТ СТОИМОСТИ ТКАНИ\n");
     printf("========================================\n\n");
-    printf("ÓŃËÎÂČß:\n");
-    printf("-- Öĺíŕ çŕ ęâ. ěĺňđ: %.2f đóá.\n", price_per_sqm);
-    printf("-- Äëčíŕ ęóńęŕ: %.2f ě\n", length_m);
-    printf("-- Řčđčíŕ ęóńęŕ: %.0f ńě (%.2f ě)\n\n", WIDTH_CM, width_m);
+    printf("УСЛОВИЯ:\n");
+    printf("-- Цена за кв. метр: %.2f руб.\n", price_per_sqm);
+    printf("-- Длина куска: %.2f м\n", length_m);
+    printf("-- Ширина куска: %.0f см (%.2f м)\n\n", WIDTH_CM, width_m);
 
-    printf("ĐŔŃ×ĹŇ:\n");
-    printf("-- Ďëîůŕäü ęóńęŕ ňęŕíč: %.2f ě * %.2f ě = %.2f ęâ. ě\n",
+    printf("РАСЧЕТ:\n");
+    printf("-- Площадь куска ткани: %.2f м * %.2f м = %.2f кв. м\n",
         length_m, width_m, area);
-    printf("-- Ńňîčěîńňü ęóńęŕ: %.2f ęâ. ě * %.2f đóá/ęâ.ě = %.2f đóá.\n",
+    printf("-- Стоимость куска: %.2f кв. м * %.2f руб/кв.м = %.2f руб.\n",
         area, price_per_sqm, total_cost);
     printf("========================================\n");
-    printf("ČŇÎĂÎÂŔß ŃŇÎČĚÎŃŇÜ: %.2f đóá.\n", total_cost);
+    printf("ИТОГОВАЯ СТОИМОСТЬ: %.2f руб.\n", total_cost);
 
     return 0;
 }

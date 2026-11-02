@@ -50,7 +50,7 @@ int main() {
     printf("Введите длину куска ткани (x метров): ");
     scanf("%f", &length_m);
 
-    float width_m = WIDTH_CM / CM_TO_METERS; /
+    float width_m = WIDTH_CM / CM_TO_METERS; 
     double area = length_m * width_m;
     double total_cost = area * price_per_sqm;
 

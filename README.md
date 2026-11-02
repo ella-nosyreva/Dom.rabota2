@@ -29,8 +29,9 @@
 
 ## 2. Реализация программы
 
-#define _CRT_SECURE_NO_WARNINGS
+```
 
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <locale.h>
 
@@ -49,9 +50,9 @@ int main() {
     printf("Введите длину куска ткани (x метров): ");
     scanf("%f", &length_m);
 
-    float width_m = WIDTH_CM / CM_TO_METERS; // Вычисляем ширину в метрах (80 см = 0.8 м)
-    double area = length_m * width_m; // Вычисляем площадь куска ткани в кв. метрах
-    double total_cost = area * price_per_sqm; // Вычисляем итоговую стоимость
+    float width_m = WIDTH_CM / CM_TO_METERS; /
+    double area = length_m * width_m;
+    double total_cost = area * price_per_sqm;
 
     printf("\nРАСЧЕТ СТОИМОСТИ ТКАНИ\n");
     printf("========================================\n\n");
@@ -70,6 +71,8 @@ int main() {
 
     return 0;
 }
+
+```
 
 ## 3. Результаты работы программы
 Пример работы программы при вводе:

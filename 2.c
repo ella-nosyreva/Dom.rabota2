@@ -1,4 +1,3 @@
-
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <locale.h>
@@ -18,7 +17,8 @@ int main() {
     printf("Введите длину куска ткани (x метров): ");
     scanf("%f", &length_m);
 
-    float width_m = WIDTH_CM / CM_TO_METERS; /
+    float width_m = WIDTH_CM / CM_TO_METERS; 
+    
     double area = length_m * width_m;
     double total_cost = area * price_per_sqm;
 
@@ -32,7 +32,7 @@ int main() {
     printf("РАСЧЕТ:\n");
     printf("-- Площадь куска ткани: %.2f м * %.2f м = %.2f кв. м\n",
         length_m, width_m, area);
-    printf("-- Стоимость куска: %.2f кв. м * %.2f руб/кв.м = %.2f руб.\n",
+    printf("-- Стоимость куска: %.2f кв. м * %.2f руб/кв.м = %.2f руб.\n", 
         area, price_per_sqm, total_cost);
     printf("========================================\n");
     printf("ИТОГОВАЯ СТОИМОСТЬ: %.2f руб.\n", total_cost);
